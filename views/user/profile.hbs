@@ -1,0 +1,24 @@
+{{# each products}}
+<div class="row">
+    {{# each this}}
+    <div class="col-sm-6 col-md-4">
+
+
+        <img src="{{this.pic}}" class="img-responsive " id="thumb">
+       
+        <label for="fname">Name</label>{{this.fname}} {{this.lname}} <br>
+        <label for="email">Email</label>{{this.email}}<br>
+        <label for="blood">Blood group</label>{{this.blood}}<br>
+        <label for="DOB">Date Of Birth</label>{{this.DOB}}<br>
+        <label for="gender">Gender</label>{{this.gender}} <br>
+        <label for="cnic">CNIC</label>{{this.cnic}} <br>
+        <label for="address">Address</label>{{this.address}} <br>
+        <label for="city">City</label>{{this.city}} <br>
+        <label for="province">Province</label>{{this.province}} <br>
+        <label for="phone">Phone</label>{{this.phone}} <br>
+    </div>
+
+    {{/ each}}
+</div>
+
+{{/ each}}
